@@ -1,0 +1,11 @@
+FROM postgres:16-alpine
+
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=admin
+ENV POSTGRES_DB=bike_booking
+
+EXPOSE 5432
+
+VOLUME /var/lib/postgresql/data
+
+CMD ["postgres"]
